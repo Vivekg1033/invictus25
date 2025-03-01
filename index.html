@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Research Recommendation System | Workademy</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+</head>
+
+<body>
+    <div id="preloader">
+        <h1 id="preloader-text">Welcome to TECHNIX</h1>
+        <p class="hero-subtext">AI-Powered Research Discovery</p>
+    </div>
+
+    <nav class="navbar">
+        <div class="logo">TECHNIX</div>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="signup.html">profile</a></li>
+        </ul>
+        <div class="profile">
+            <img src="./assets/profile-icon.png" alt="Profile" class="profile-icon">
+        </div>
+    </nav>
+
+    <div id="main-content" style="display: none;">
+        <section class="form-section">
+            <form action="/recommend" method="post">
+                <label>Enter a Research Topic:</label>
+                <input type="text" name="query" placeholder="e.g., Artificial Intelligence">
+                <button type="submit">Get Recommendations</button>
+            </form>
+        </section>
+
+        <div class="tabs-container">
+            <button class="tab-btn active" data-tab="research">Research Papers</button>
+            <button class="tab-btn" data-tab="datasets">Datasets</button>
+            <button class="tab-btn" data-tab="github">GitHub Repos</button>
+        </div>
+
+        <div class="tabs-content">
+            <div class="tab-content active" id="research">
+                <div class="recommendation-container">
+                    <div class="recommendation-card">
+                        <h4>Deep Learning in AI</h4>
+                        <p>Explore deep learning advancements in artificial intelligence.</p>
+                        <a href="#" target="_blank" class="view-paper-btn">🔗 View Paper</a>
+                    </div>
+                    <div class="recommendation-card">
+                        <h4>AI Ethics</h4>
+                        <p>Understand ethical challenges in AI development.</p>
+                        <a href="#" target="_blank" class="view-paper-btn">🔗 View Paper</a>
+                    </div>
+                    <div class="recommendation-card">
+                        <h4>Quantum Computing</h4>
+                        <p>Latest innovations in quantum computing research.</p>
+                        <a href="#" target="_blank" class="view-paper-btn">🔗 View Paper</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-content" id="datasets">
+                <div class="recommendation-container">
+                    <div class="recommendation-card">
+                        <h4>AI Dataset</h4>
+                        <p>High-quality dataset for training AI models.</p>
+                        <a href="#" target="_blank" class="view-paper-btn">📂 Download Dataset</a>
+                    </div>
+                    <div class="recommendation-card">
+                        <h4>Medical Imaging Dataset</h4>
+                        <p>Medical dataset for AI-based image analysis.</p>
+                        <a href="#" target="_blank" class="view-paper-btn">📂 Download Dataset</a>
+                    </div>
+                    <div class="recommendation-card">
+                        <h4>Financial Data</h4>
+                        <p>Stock market and financial forecasting dataset.</p>
+                        <a href="#" target="_blank" class="view-paper-btn">📂 Download Dataset</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-content" id="github">
+                <div class="recommendation-container">
+                    <div class="recommendation-card">
+                        <h4>AI Research Repo</h4>
+                        <p>Collection of AI research projects and implementations.</p>
+                        <a href="#" target="_blank" class="view-paper-btn">🔗 View GitHub</a>
+                    </div>
+                    <div class="recommendation-card">
+                        <h4>ML Model Repository</h4>
+                        <p>Machine learning models and frameworks repository.</p>
+                        <a href="#" target="_blank" class="view-paper-btn">🔗 View GitHub</a>
+                    </div>
+                    <div class="recommendation-card">
+                        <h4>Data Science Toolkit</h4>
+                        <p>Data science and analytics tools on GitHub.</p>
+                        <a href="#" target="_blank" class="view-paper-btn">🔗 View GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section class="slider-section">
+            <div class="slider-container">
+                <button class="prev-btn">❮</button>
+                <div class="slider">
+                    <img src="./assets/image1.jpg" alt="Research Image 1">
+                    <img src="./assets/image2.jpg" alt="Research Image 2">
+                    <img src="./assets/image3.jpg" alt="Research Image 3">
+                </div>
+                <button class="next-btn">❯</button>
+            </div>
+        </section>
+
+        <footer>
+            <p>&copy; 2025 TECHNIX | AI-Powered Research Discovery</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

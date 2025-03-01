@@ -1,0 +1,308 @@
+/* General Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff3e0;
+    color: #333;
+}
+
+/* Preloader */
+#preloader {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #ff8c00;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    color: white;
+    z-index: 1000;
+}
+
+#preloader-text {
+    font-size: 42px;
+    font-weight: bold;
+    opacity: 0;
+}
+
+.hero-subtext {
+    font-size: 20px;
+    opacity: 0;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background: linear-gradient(90deg, #ff8c00, #ff6b00);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    transform: translateY(-100%);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Logo */
+.logo {
+    font-size: 26px;
+    font-weight: bold;
+    color: white;
+    letter-spacing: 2px;
+    font-family: 'Poppins', sans-serif;
+    transition: transform 0.3s ease-in-out;
+}
+
+.logo:hover {
+    transform: scale(1.1);
+}
+
+/* Navbar Links */
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    padding: 0;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+.nav-links li {
+    position: relative;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    transition: color 0.3s ease-in-out;
+    padding: 8px 15px;
+}
+
+/* Cool hover effect */
+.nav-links a::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 3px;
+    background: white;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: width 0.3s ease-in-out;
+}
+
+.nav-links a:hover::after {
+    width: 100%;
+}
+
+.nav-links a:hover {
+    color: #ffe5b4;
+}
+
+/* Profile Icon */
+.profile {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+}
+
+.profile-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+.profile-icon:hover {
+    transform: scale(1.1);
+}
+
+/* Form Section */
+.form-section {
+    padding: 100px;
+    text-align: center;
+}
+
+.form-section form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: white;
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+input {
+    padding: 10px;
+    width: 300px;
+    margin: 10px 0;
+    border: 2px solid #ff8c00;
+    border-radius: 5px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+button {
+    padding: 10px 20px;
+    background: #ff8c00;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #ff6f00;
+}
+
+/* Tabs Navigation */
+.tabs-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.tab-btn {
+    background: #ff6b00;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.tab-btn:hover {
+    background: #ff8c00;
+    transform: scale(1.05);
+}
+
+.tab-btn.active {
+    background: white;
+    color: #ff6b00;
+    border: 2px solid #ff6b00;
+}
+
+/* Tabs Content */
+.tabs-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.tab-content {
+    display: none;
+    width: 100%;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+/* Recommendation Cards */
+.recommendation-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.recommendation-card {
+    background: white;
+    padding: 15px;
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.recommendation-card:hover {
+    transform: translateY(-5px);
+}
+
+/* View Paper Button */
+.view-paper-btn {
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px 15px;
+    background: #ff8c00;
+    color: white;
+    border-radius: 6px;
+    transition: background 0.3s ease;
+}
+
+.view-paper-btn:hover {
+    background: #ff6f00;
+}
+
+/* Image Slider Section */
+.slider-section {
+    width: 100%;
+    text-align: center;
+    margin: 30px 0;
+}
+
+.slider-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    max-width: 50%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.slider {
+    display: flex;
+    width: max-content;
+    gap: 10px;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slider img {
+    width: 150px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.prev-btn, .next-btn {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+}
+
+.prev-btn { left: 0; }
+.next-btn { right: 0; }
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #ff8c00;
+    color: white;
+}
